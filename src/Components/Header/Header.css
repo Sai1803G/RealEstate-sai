@@ -1,46 +1,109 @@
-.h-wrapper{
-    @REM background:var(--black);
-    @REM background: #a5a3a8;
-    color:black;
-    
-}
-.h-container{
-    justify-content:space-between;
-    
-    
-    @REM color:var(--secondary);
-    color:black;
-
-}
-.Nav-Dr{
-   
-    font-size:3rem;
-    font-weight:bold;
-    position:relative;
-    left:-210px;
-    color:#294980;
-
+/* Header Styles */
+.h-wrapper {
+  /* Background color commented out for now */
+  /* @REM background: var(--black); */
+  /* @REM background: #a5a3a8; */
+  color: black;
+  padding: 10px; /* Add some padding for spacing */
 }
 
-.h-menu{
-    gap:2rem;
-    color:#05289;
-   
-
-}
-.buttons{
-    margin:20px;
-   background:black;
-   color:ivory;
-   height:3rem;
-   width:9rem;
-   font-size:13px;
-   font-weight:bold;
-   border:none;
+.h-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Align items vertically */
+  color: black;
+  padding: 10px 20px; /* Add padding for spacing */
 }
 
-.h-menu >*:hover{
-cursor:pointer;
-color:#05289c;
-font-weight:bold;
+/* Navigation Styling */
+.Nav-Dr {
+  font-size: 3rem;
+  font-weight: bold;
+  position: relative;
+  left: -180px;
+  color: #294980;
+  transition: left 0.3s ease; /* Smooth transition for position change */
+}
+
+/* Menu Styling */
+.h-menu {
+  display: flex;
+  gap: 2rem;
+  color: #05289;
+  align-items: center;
+}
+
+.h-menu > * {
+  cursor: pointer;
+  transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+.h-menu > *:hover {
+  color: #05289c;
+  font-weight: bold;
+}
+
+/* Button Styling */
+.buttons {
+  margin: 20px;
+  background: black;
+  color: ivory;
+  height: 3rem;
+  width: 9rem;
+  font-size: 13px;
+  font-weight: bold;
+  border: none;
+  transition: background 0.3s ease;
+}
+
+.buttons:hover {
+  background-color: #333; /* Slightly lighter on hover */
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablet screens (max-width 768px) */
+@media (max-width: 768px) {
+  .h-container {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center; /* Center align the items */
+    padding: 10px; /* Adjust padding */
+  }
+
+  .Nav-Dr {
+    font-size: 2rem; /* Adjust font size for mobile */
+    left: 0; /* Reset the left position */
+    margin-bottom: 1rem; /* Add some margin for spacing */
+  }
+
+  .h-menu {
+    gap: 1.5rem; /* Reduce gap between menu items */
+    justify-content: center; /* Center align the menu items */
+  }
+
+  .buttons {
+    width: 100%; /* Make buttons full width on small screens */
+    font-size: 14px; /* Adjust font size */
+  }
+}
+
+/* For mobile screens (max-width 480px) */
+@media (max-width: 480px) {
+  .h-wrapper {
+    padding: 10px; /* Add padding for mobile screens */
+  }
+
+  .Nav-Dr {
+    font-size: 1.8rem; /* Further reduce font size */
+    left: 0; /* Ensure it stays centered */
+  }
+
+  .h-menu {
+    gap: 1rem; /* Reduce gap further on mobile */
+  }
+
+  .buttons {
+    width: 100%; /* Full width buttons for mobile */
+    font-size: 12px; /* Further adjust font size */
+  }
 }
