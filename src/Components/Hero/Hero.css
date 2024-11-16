@@ -21,9 +21,9 @@
 .hero-left {
   color: black;
   background: rgba(169, 169, 169, 0.5);
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
-  line-height: 1.5;
+  line-height: 1;
   border-radius: 10px;
   font-family: 'Poppins', sans-serif;
   padding: 2rem;
