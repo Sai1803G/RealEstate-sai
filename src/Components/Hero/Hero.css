@@ -8,7 +8,7 @@
   padding-bottom: 2rem;
   background-color: black;
   height: calc(100vh - 55px); /* Adjust based on your navbar height */
-  background-image: url('House.jpg'); /* Path to your image */
+  background-image: url('/contact.jpg'); /* Path to your image */
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
