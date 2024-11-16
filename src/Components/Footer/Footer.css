@@ -1,0 +1,66 @@
+/* Footer.css */
+
+/* Basic footer styling */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: left;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.company-details,
+.social-media,
+.legal-links {
+  width: 30%;
+  margin: 10px 0;
+}
+
+.footer h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.footer p,
+.footer ul {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.social-media ul,
+.legal-links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-media li,
+.legal-links li {
+  margin-bottom: 10px;
+}
+
+.social-media a,
+.legal-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.social-media a:hover,
+.legal-links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design: Stack the columns on smaller screens */
+@media (max-width: 768px) {
+  .company-details,
+  .social-media,
+  .legal-links {
+    width: 100%;
+    text-align: center;
+  }
+}

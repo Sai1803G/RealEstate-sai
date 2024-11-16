@@ -1,0 +1,36 @@
+.h-wrapper{
+    @REM background:var(--black);
+    @REM background: #a5a3a8;
+    color:black;
+}
+.h-container{
+    justify-content:space-between;
+    
+    
+    @REM color:var(--secondary);
+    color:black;
+
+}
+
+.h-menu{
+    gap:2rem;
+    color:#05289;
+   
+
+}
+.buttons{
+    margin:20px;
+   background:black;
+   color:ivory;
+   height:3rem;
+   width:9rem;
+   font-size:13px;
+   font-weight:bold;
+   border:none;
+}
+
+.h-menu >*:hover{
+cursor:pointer;
+color:#05289c;
+font-weight:bold;
+}

@@ -1,0 +1,68 @@
+/* Ensure About Us section takes full screen */
+.about-us {
+  width: 100vw;         /* Full width of the viewport */
+  height: 100vh;        /* Full height of the viewport */
+  display: flex;
+  flex-direction: column; /* Align the nav and content vertically */
+  align-items: center;  /* Center the content horizontally */
+  margin: 0;
+  color: white; /* Text color for better contrast */
+  position: relative; /* Make sure the .abt-nav is within this section */
+}
+
+/* Styling for navigation */
+.abt-nav {
+  width: 100%; /* Full width to stretch across the top */
+  display: flex;
+  justify-content: space-between;
+  padding: 20px; /* Add padding for spacing */
+  background: transparent; /* No background */
+  z-index: 2; /* Ensure it's above other content */
+}
+
+/* Button styling */
+.butt {
+  margin: 20px;
+  background: ivory;
+  color: black;
+  height: 3rem;
+  font-size: 18px;
+  width: 6rem;
+  font-weight: bold;
+  border: none;
+}
+
+/* Header styling */
+.abt-head {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Content styling */
+.abt-cont {
+  margin-top: 20px;
+  text-align: center; /* Center the content */
+  color: black; /* Adjust color if needed */
+}
+
+/* Container to hold the text */
+.about-us-content {
+  padding: 20px;
+  width: 80%; /* Limit the width for better layout */
+  max-width: 1200px; /* Optional: max-width to limit section size */
+  text-align: center;
+}
+
+/* Text content styling */
+.text-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.text-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
