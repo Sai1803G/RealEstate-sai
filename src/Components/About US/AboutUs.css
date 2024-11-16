@@ -1,28 +1,32 @@
-/* Ensure About Us section takes full screen */
+
 .about-us {
-  width: 100vw;         /* Full width of the viewport */
-  height: 100vh;        /* Full height of the viewport */
+  width: 100vw;        
+  height: 100vh;        
   display: flex;
-  flex-direction: column; /* Align the nav and content vertically */
-  align-items: center;  /* Center the content horizontally */
+  flex-direction: column; 
+  align-items: center;
   margin: 0;
-  color: white; /* Text color for better contrast */
-  position: relative; /* Make sure the .abt-nav is within this section */
+  color: white; 
+  position: relative;
+  background-color: #f4f4f4;
 }
 
-/* Styling for navigation */
+/* Navigation Bar */
 .abt-nav {
-  width: 100%; /* Full width to stretch across the top */
+  width: 100%; 
   display: flex;
   justify-content: space-between;
-  padding: 20px; /* Add padding for spacing */
-  background: transparent; /* No background */
-  z-index: 2; /* Ensure it's above other content */
+  padding: 20px; 
+  background: transparent; 
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-/* Button styling */
+/* Button Styling */
 .butt {
-  margin: 20px;
+  margin: 10px 0;
   background: ivory;
   color: black;
   height: 3rem;
@@ -30,32 +34,42 @@
   width: 6rem;
   font-weight: bold;
   border: none;
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
 }
 
-/* Header styling */
+.butt:hover {
+  background-color: #ddd;
+}
+
+/* Header */
 .abt-head {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 30px;
   color: #333;
+  font-weight: 600;
 }
 
 /* Content styling */
 .abt-cont {
   margin-top: 20px;
-  text-align: center; /* Center the content */
-  color: black; /* Adjust color if needed */
+  text-align: center;
+  color: black;
+  padding: 0 1rem;
 }
 
 /* Container to hold the text */
 .about-us-content {
   padding: 20px;
-  width: 80%; /* Limit the width for better layout */
-  max-width: 1200px; /* Optional: max-width to limit section size */
+  width: 80%;
+  max-width: 1200px; 
   text-align: center;
+  margin-top: 100px; 
 }
 
-/* Text content styling */
+
 .text-content h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
@@ -65,4 +79,61 @@
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 10px;
+  color: #555; 
+}
+
+
+
+/* For tablet screens */
+@media (max-width: 768px) {
+  .abt-head {
+    font-size: 2rem;
+  }
+
+  .abt-cont h2 {
+    font-size: 1.8rem;
+  }
+
+  .text-content p {
+    font-size: 1rem;
+  }
+
+  /* Button adjustments */
+  .butt {
+    width: 5rem;
+    height: 2.5rem;
+    font-size: 16px;
+  }
+
+  .about-us-content {
+    padding: 10px;
+    width: 90%;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .abt-head {
+    font-size: 1.5rem;
+  }
+
+  .abt-cont h2 {
+    font-size: 1.5rem;
+  }
+
+  .text-content p {
+    font-size: 0.9rem;
+  }
+
+  /* Button adjustments */
+  .butt {
+    width: 4.5rem;
+    height: 2.2rem;
+    font-size: 14px;
+  }
+
+  .about-us-content {
+    padding: 8px;
+    width: 95%;
+  }
 }
