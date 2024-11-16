@@ -2,6 +2,7 @@
     @REM background:var(--black);
     @REM background: #a5a3a8;
     color:black;
+    
 }
 .h-container{
     justify-content:space-between;
@@ -9,6 +10,15 @@
     
     @REM color:var(--secondary);
     color:black;
+
+}
+.Nav-Dr{
+   
+    font-size:3rem;
+    font-weight:bold;
+    position:relative;
+    left:-210px;
+    color:#294980;
 
 }
 

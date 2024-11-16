@@ -25,11 +25,38 @@
   font-size: 1.2rem;
   margin-bottom: 10px;
 }
-
+.foot-head{
+  position:relative;
+  left:11.5rem;
+}
 .footer p,
 .footer ul {
   font-size: 1rem;
   line-height: 1.6;
+}
+.social-icons {
+  display: flex; /* Use flexbox for horizontal alignment */
+  justify-content: center; /* Center the icons horizontally */
+  gap: 10rem; /* Add space between the icons */
+  margin-left:25rem;
+  list-style: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.social-icons li {
+  display: inline-block; /* Ensure the list items display inline */
+  margin-left:20px;
+}
+
+.social-icons a {
+  color: #333; /* Adjust color as needed */
+  font-size: 24px; /* Adjust icon size */
+  transition: color 0.3s; /* Smooth color change on hover */
+}
+
+.social-icons a:hover {
+  color: #007bff; /* Change icon color on hover */
 }
 
 .social-media ul,
@@ -54,7 +81,14 @@
 .legal-links a:hover {
   text-decoration: underline;
 }
+.social{
+  display:flex;
+  
 
+}
+ul i{
+  font-size:23px;
+}
 /* Responsive design: Stack the columns on smaller screens */
 @media (max-width: 768px) {
   .company-details,

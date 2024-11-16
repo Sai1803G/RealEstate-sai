@@ -58,7 +58,7 @@ const FeaturedProperties = () => {
     <div className='feat-nav'>
         <h3 className="feat-head">Featured Properties</h3>
         <button className='butt' onClick={()=>{navigate('/')}}>HOME</button>
-        </div>
+    </div>
      <div className='properties-grid'>
         {Properties.map((property)=>(
             <div key ={property.id} className='property-card'>

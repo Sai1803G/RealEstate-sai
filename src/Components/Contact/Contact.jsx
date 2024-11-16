@@ -20,7 +20,7 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert('Your message has been sent!');
+    alert('Thank you for your request! We are excited to connect with you!');
     // Handle form submission (e.g., send data to a server)
     setFormData({
       name: '',

@@ -1,78 +1,133 @@
 
-    
-
 .hero-wrapper {
   color: white;
   position: relative;
   padding-bottom: 2rem;
   background-color: black;
   height: calc(100vh - 55px); /* Adjust based on your navbar height */
-  background-image: url('./House.jpg'); /* Path to your image */
-  background-size: cover; /* Ensures the image covers the entire background */
-  background-position: center center; /* Keeps the image centered */
+  background-image: url('House.jpg'); /* Path to your image */
+  background-size: cover;
+  background-position: center center;
   background-repeat: no-repeat;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
+
 .hero-left {
-  color:Black;
-  @REM background:rgba(255, 255, 240, 0.8);
-  background: rgba(169, 169, 169, 0.5);
-  font-size: 3rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+  font-size: 2.5rem;
   font-weight: bold;
   line-height: 1.5;
-  border-radius:10px;
-  font-family: 'Poppins', sans-serif; /* Adjust font-family as needed */
+  border-radius: 10px;
+  font-family: 'Poppins', sans-serif;
+  padding: 2rem;
+  max-width: 80%;
+  margin: auto;
 }
 
+.hero-container {
+  justify-content: space-between;
+  align-items: flex-end;
+}
 
-.hero-container{
-    justify-content:space-between;
-    align-items:flex-end;
+.h-menu a {
+  font-size: 20px;
+}
 
+.image-container {
+  width: 30rem;
+  height: 35rem;
+  overflow: hidden;
+  border-radius: 15rem 15rem 0 0;
+  margin-left: 32rem;
 }
-.h-menu a{
-  font-size:20px;
-}
-.image-container{
-    width:30rem;
-    height:35rem;
-    overflow:hidden;
-    border-radius:15rem 15rem 0 0 ;
-    border:0px solid rgba(255 , 255 , 0.12);
-    margin-left:32rem;
-}
-.image-container>img{
-    width:100%;
-    height:100%;
-    
 
+.image-container > img {
+  width: 100%;
+  height: 100%;
 }
+
 .button {
-   margin:20px;
-   background:ivory;
-   color:black;
-   height:4rem;
-   font-size:18px;
-   font-weight:bold;
-   
+  margin: 20px;
+  background: ivory;
+  color: black;
+  height: 4rem;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0 2rem;
+  border: none;
+  cursor: pointer;
 }
 
 .button:hover {
-  background-color:black;
-  color:ivory;
+  background-color: black;
+  color: ivory;
 }
 
+/* Media Queries for Responsiveness */
+
+/* For tablet screens (max-width 768px) */
 @media (max-width: 768px) {
-  .hero h1 {
+  .hero-wrapper {
+    height: auto; /* Allow height to adjust for smaller screens */
+    padding: 20px;
+  }
+
+  .hero-left {
+    font-size: 2.5rem;
+    padding: 1.5rem;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .button {
+    font-size: 16px;
+    height: 3rem;
+    width: 100%; /* Make button full width for easier tapping on mobile */
+  }
+
+  .image-container {
+    width: 25rem;
+    height: 30rem;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+/* For mobile screens (max-width 480px) */
+@media (max-width: 480px) {
+  .hero-wrapper {
+    padding: 10px;
+  }
+
+  .hero-left {
+    font-size: 2rem;
+    padding: 1rem;
+    max-width: 100%;
+  }
+
+  .hero-left h2 {
     font-size: 2rem;
   }
 
-  .hero p {
+  .hero-left p {
     font-size: 1.2rem;
+  }
+
+  .button {
+    font-size: 14px;
+    height: 3rem;
+    padding: 0 1rem;
+  }
+
+  .image-container {
+    width: 20rem;
+    height: 25rem;
+    margin-left: 0;
+    margin-top: 20px;
   }
 }
