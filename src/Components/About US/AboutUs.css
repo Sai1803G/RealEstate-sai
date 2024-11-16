@@ -1,23 +1,26 @@
-
+/* Ensure About Us section takes full screen */
 .about-us {
-  width: 100vw;        
-  height: 100vh;        
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  flex-direction: column; 
+  background: url("/contact.jpg");
+  flex-direction: column;
   align-items: center;
   margin: 0;
-  color: white; 
+  color: white;
   position: relative;
   background-color: #f4f4f4;
+  background-size: cover;
+  background-position: center;
 }
 
 /* Navigation Bar */
 .abt-nav {
-  width: 100%; 
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 20px; 
-  background: transparent; 
+  padding: 20px;
+  background: transparent;
   z-index: 2;
   position: absolute;
   top: 0;
@@ -34,9 +37,9 @@
   width: 6rem;
   font-weight: bold;
   border: none;
-  border-radius: 5px; 
-  cursor: pointer; 
-  transition: background-color 0.3s ease; 
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .butt:hover {
@@ -46,6 +49,7 @@
 /* Header */
 .abt-head {
   text-align: center;
+  background: rgba(135, 206, 235, 0.4);
   font-size: 3rem;
   margin-bottom: 30px;
   color: #333;
@@ -54,22 +58,29 @@
 
 /* Content styling */
 .abt-cont {
-  margin-top: 20px;
-  text-align: center;
+  padding: 2rem;
   color: black;
-  padding: 0 1rem;
+  background: rgba(169, 169, 169, 0.9);
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.5;
+  border-radius: 10px;
+  font-family: 'Poppins', sans-serif;
+  max-width: 80%;
+  margin: auto;
+  text-align: center;
 }
 
 /* Container to hold the text */
 .about-us-content {
   padding: 20px;
   width: 80%;
-  max-width: 1200px; 
+  max-width: 1200px;
   text-align: center;
-  margin-top: 100px; 
+  margin-top: 100px;
 }
 
-
+/* Text content styling */
 .text-content h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
@@ -79,15 +90,19 @@
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 10px;
-  color: #555; 
+  color: black;
 }
 
-
+/* Responsive Design */
 
 /* For tablet screens */
 @media (max-width: 768px) {
   .abt-head {
     font-size: 2rem;
+  }
+
+  .abt-cont {
+    font-size: 1.8rem;
   }
 
   .abt-cont h2 {
@@ -111,7 +126,7 @@
   }
 }
 
-
+/* For mobile screens */
 @media (max-width: 480px) {
   .abt-head {
     font-size: 1.5rem;
