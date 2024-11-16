@@ -16,14 +16,14 @@ const Properties =[
         image:"./r2.png",
         title:"Modern Apartment",
         location:"Banglore,Karnataka",
-        price:"400000Rs",
+        price:"900000Rs",
     },
     {
         id:3,
         image:"./r3.png",
         title:"Office space",
         location:"Pune,Maharashtra",
-        price:"400000Rs",
+        price:"600000Rs",
     },
    {
     id:4,
