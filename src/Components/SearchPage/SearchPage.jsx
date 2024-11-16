@@ -18,7 +18,7 @@ const properties =[
         title:'Modern Apartment',
         location:"Nagpur,Maharashtra",
         type:"Apartment",
-        price:"400,000Rs"
+        price:"900,000Rs"
     },
     {
         id:3,
@@ -26,7 +26,7 @@ const properties =[
         title:'Office space',
         location:"Pune,Maharashtra",
         type:"Office",
-        price:"400,000Rs"
+        price:"600,000Rs"
     },
     {
         id:4,
@@ -42,7 +42,7 @@ const properties =[
         title:'Elegant Penthouse in the City',
         location:"Pune,Maharashtra",
         type:"Penthouse",
-        price:"400,000Rs"
+        price:"560,000Rs"
     },
     {
         id:6,
@@ -50,7 +50,7 @@ const properties =[
         title:'Office space',
         location:"Mumbai,Maharashra",
         type:"Office",
-        price:"400,000Rs"
+        price:"800,000Rs"
     },
     
 
