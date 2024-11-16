@@ -18,7 +18,7 @@ const properties =[
         title:'Modern Apartment',
         location:"Nagpur,Maharashtra",
         type:"Apartment",
-        price:"400,000Rs"
+        price:"900,000Rs"
     },
     {
         id:3,
@@ -26,7 +26,7 @@ const properties =[
         title:'Office space',
         location:"Pune,Maharashtra",
         type:"Office",
-        price:"400,000Rs"
+        price:"600,000Rs"
     },
     {
         id:4,
@@ -42,7 +42,7 @@ const properties =[
         title:'Elegant Penthouse in the City',
         location:"Pune,Maharashtra",
         type:"Penthouse",
-        price:"400,000Rs"
+        price:"560,000Rs"
     },
     {
         id:6,
@@ -50,14 +50,14 @@ const properties =[
         title:'Office space',
         location:"Mumbai,Maharashra",
         type:"Office",
-        price:"400,000Rs"
+        price:"800,000Rs"
     },
     
 
 ]
 const SearchPage = () => {
     const[location, setLocation] = useState('');
-    const[propertyType, setPropertType] = useState('');
+    const[propertyTitle, setPropertTitle] = useState('');
     const[filteredProperties, setFilteredProperties] = useState(properties);
     const navigate = useNavigate();
 
@@ -65,7 +65,7 @@ const SearchPage = () => {
     const handleSearch =() =>{
         const filtered = properties.filter((property)=>{
             const matchesLocation = property.location.toLowerCase().includes(location.toLowerCase());
-            const matchesType = property.type.toLowerCase().includes(propertyType.toLowerCase());
+            const matchesType = property.title.toLowerCase().includes(propertyTitle.toLowerCase());
             return matchesLocation && matchesType;
 
         });
@@ -83,7 +83,7 @@ const SearchPage = () => {
          <div className="search-filters">
             <input type='text'placeholder='Search by location' value={location} onChange={(e)=> setLocation(e.target.value)}/>
             
-            <input type='text'placeholder='Search by Property' value={propertyType} onChange={(e)=> setPropertType(e.target.value)}/>
+            <input type='text'placeholder='Search by Property' value={propertyTitle} onChange={(e)=> setPropertTitle(e.target.value)}/>
             
             <button onClick={handleSearch}>Search</button>
         </div>
