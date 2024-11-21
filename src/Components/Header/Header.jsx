@@ -22,7 +22,7 @@ const Header = () => {
        CONTACT
        </Link>
        
-       <button className='buttons'>EXPLORE MORE</button>
+{/*        <button className='buttons'>EXPLORE MORE</button> */}
         
         
 
